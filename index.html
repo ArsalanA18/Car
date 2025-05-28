@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anas - clean your favourite car</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/" alt="Put logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explore packages</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore Packages</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+       <!-- HERO SECTION -->
+    <section class="section hero" id="home">
+      <div class="container">
+
+        <div class="hero-content">
+          <h2 class="h1 hero-title">Professional Mobile Car Wash & Detailing – We Come to You!</h2>
+          <p class="hero-text">Work in [Country]!</p>
+        </div>
+
+        <div class="hero-banner"></div>
+
+      </div> <!-- End of .container -->
+    </section>
+
+    <!-- BOOKING FORM BELOW HERO -->
+    <section class="section booking-form">
+      <div class="container">
+        <form action="" class="hero-form">
+
+          <div class="input-wrapper">
+            <label for="package" class="input-label">Package</label>
+            <select id="package" name="package" class="input-field">
+              <option value="">Choose a package</option>
+              <option value="superwash">Superwash (Interior + Exterior)</option>
+              <option value="interior-only">Interior Only</option>
+              <option value="exterior-only">Exterior Only</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="vehicle-type" class="input-label">Vehicle Type</label>
+            <select id="vehicle-type" name="vehicle-type" class="input-field">
+              <option value="">Select vehicle type</option>
+              <option value="sedan">Sedan</option>
+              <option value="small-suv">Small SUV</option>
+              <option value="large-suv">Large SUV</option>
+              <option value="truck">Truck</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="extra-services" class="input-label">Extra Services</label>
+            <select id="extra-services" name="extra-services" class="input-field">
+              <option value="">Select if needed</option>
+              <option value="none">None</option>
+              <option value="pet-hair">Pet Hair Removal</option>
+              <option value="stain-removal">Stain Removal</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Book Now</button>
+
+        </form>
+      </div>
+    </section>
+       
+
+
+
+
+
+     <section class="section featured-car" id="featured-car">
+  <div class="container">
+
+    <div class="title-wrapper">
+      <h2 class="h2 section-title">Featured Packages</h2>
+      <a href="#" class="featured-car-link">
+        <span>View more</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+    </div>
+
+    <ul class="featured-car-list">
+
+      <li>
+        <div class="featured-car-card">
+          <figure class="card-banner">
+            <img src="./assets/images/car-1.jpg" alt="Superwash Package" loading="lazy" width="440" height="300" class="w-100">
+          </figure>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title"><a href="#">SUPERWASH PACKAGE</a></h3>
+              <data class="year" value="2025">Interior + Exterior</data>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item"><ion-icon name="sparkles-outline"></ion-icon><span class="card-item-text">Full Vacuum & Shampoo</span></li>
+              <li class="card-list-item"><ion-icon name="water-outline"></ion-icon><span class="card-item-text">Eco-Friendly Exterior Wash</span></li>
+              <li class="card-list-item"><ion-icon name="sunny-outline"></ion-icon><span class="card-item-text">UV Protectant + Air Freshener</span></li>
+              <li class="card-list-item"><ion-icon name="location-outline"></ion-icon><span class="card-item-text">We Come to You</span></li>
+            </ul>
+            <div class="card-price-wrapper">
+              <p class="card-price"><strong>$199</strong> and up</p>
+              <button class="btn fav-btn" aria-label="Add to favourite list"><ion-icon name="heart-outline"></ion-icon></button>
+              <button class="btn book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+          <figure class="card-banner">
+            <img src="./assets/images/car-2.jpg" alt="Interior Detail" loading="lazy" width="440" height="300" class="w-100">
+          </figure>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title"><a href="#">Interior Detail</a></h3>
+              <data class="year" value="2025">Deep Clean</data>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item"><ion-icon name="browsers-outline"></ion-icon><span class="card-item-text">Vacuum + Shampoo Mats</span></li>
+              <li class="card-list-item"><ion-icon name="color-palette-outline"></ion-icon><span class="card-item-text">Dash & Console Detailing</span></li>
+              <li class="card-list-item"><ion-icon name="cube-outline"></ion-icon><span class="card-item-text">Leather/Vinyl Conditioner</span></li>
+              <li class="card-list-item"><ion-icon name="leaf-outline"></ion-icon><span class="card-item-text">Air Freshener Included</span></li>
+            </ul>
+            <div class="card-price-wrapper">
+              <p class="card-price"><strong>$160–$170</strong></p>
+              <button class="btn fav-btn" aria-label="Add to favourite list"><ion-icon name="heart-outline"></ion-icon></button>
+              <button class="btn book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+          <figure class="card-banner">
+            <img src="./assets/images/car-3.jpg" alt="Exterior Detail" loading="lazy" width="440" height="300" class="w-100">
+          </figure>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title"><a href="#">Exterior Detail</a></h3>
+              <data class="year" value="2025">Shine & Protection</data>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item"><ion-icon name="car-outline"></ion-icon><span class="card-item-text">Pressure Wash & Hand Dry</span></li>
+              <li class="card-list-item"><ion-icon name="flash-outline"></ion-icon><span class="card-item-text">Tire Shine & Wax Spray</span></li>
+              <li class="card-list-item"><ion-icon name="sparkles-outline"></ion-icon><span class="card-item-text">Bug & Tar Removal</span></li>
+              <li class="card-list-item"><ion-icon name="shield-checkmark-outline"></ion-icon><span class="card-item-text">Paint Safe Products</span></li>
+            </ul>
+            <div class="card-price-wrapper">
+              <p class="card-price"><strong>Included</strong> in Superwash or ask for quote</p>
+              <button class="btn fav-btn" aria-label="Add to favourite list"><ion-icon name="heart-outline"></ion-icon></button>
+              <button class="btn book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- Modal structure -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h2>Book Now</h2>
+    <p>Contact us to book your package:</p>
+    <p>Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/YOUR_FB_LINK_HERE" target="_blank" rel="noopener noreferrer">Visit our Facebook page</a></p>
+  </div>
+</div>
+
+<style>
+  /* Modal styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .modal-close:hover {
+    color: #000;
+  }
+
+  .modal a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .modal a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  // JavaScript to handle modal open/close
+  document.querySelectorAll('.book-now-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      document.getElementById('bookingModal').style.display = 'block';
+    });
+  });
+
+  document.querySelector('.modal-close').addEventListener('click', () => {
+    document.getElementById('bookingModal').style.display = 'none';
+  });
+
+  // Close modal if clicking outside modal-content
+  window.addEventListener('click', (event) => {
+    const modal = document.getElementById('bookingModal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+
+
+
+<!--  
+  - #GET START
+-->
+
+<section class="section get-start">
+  <div class="container">
+
+    <h2 class="h2 section-title">How to Book in 4 Easy Steps</h2>
+
+    <ul class="get-start-list">
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-1">
+            <ion-icon name="person-add-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Create an Account</h3>
+
+          <p class="card-text">
+            Sign up with your email to get started and manage your bookings easily.
+          </p>
+
+          <a href="#" class="card-link">Get Started</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-2">
+            <ion-icon name="car-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Choose Your Package</h3>
+
+          <p class="card-text">
+            Select from Superwash, Interior Detail, or Exterior services based on your vehicle's needs.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-3">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Pick a Date & Time</h3>
+
+          <p class="card-text">
+            Choose a convenient time and we’ll come to your location with all the tools needed.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="get-start-card">
+
+          <div class="card-icon icon-4">
+            <ion-icon name="card-outline"></ion-icon>
+          </div>
+
+          <h3 class="card-title">Confirm & Pay</h3>
+
+          <p class="card-text">
+            Confirm your booking, pay securely online, and let us take care of the rest.
+          </p>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+
+
+     <!-- 
+  - #BLOG
+-->
+
+<section class="section blog" id="blog">
+  <div class="container">
+
+    <h2 class="h2 section-title">Detailing Tips & Updates</h2>
+
+    <ul class="blog-list has-scrollbar">
+
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#"><img src="./assets/images/blog-1.jpg" alt="Benefits of Mobile Car Detailing" loading="lazy" class="w-100"></a>
+            <a href="#" class="btn card-badge">Mobile Service</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title"><a href="#">Benefits of Mobile Car Detailing</a></h3>
+            <div class="card-meta">
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="2025-04-10">April 10, 2025</time>
+              </div>
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <data value="58">58</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#"><img src="./assets/images/blog-2.jpg" alt="How to Maintain a Clean Interior" loading="lazy" class="w-100"></a>
+            <a href="#" class="btn card-badge">Interior Tips</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title"><a href="#">How to Maintain a Clean Interior</a></h3>
+            <div class="card-meta">
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="2025-04-02">April 2, 2025</time>
+              </div>
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <data value="34">34</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#"><img src="./assets/images/blog-3.jpg" alt="Eco-Friendly Car Wash Products" loading="lazy" class="w-100"></a>
+            <a href="#" class="btn card-badge">Eco Tips</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title"><a href="#">Eco-Friendly Car Wash Products</a></h3>
+            <div class="card-meta">
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="2025-03-22">March 22, 2025</time>
+              </div>
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <data value="41">41</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#"><img src="./assets/images/blog-4.jpg" alt="Top 5 Car Detailing Mistakes to Avoid" loading="lazy" class="w-100"></a>
+            <a href="#" class="btn card-badge">Advice</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title"><a href="#">Top 5 Car Detailing Mistakes to Avoid</a></h3>
+            <div class="card-meta">
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="2025-03-10">March 10, 2025</time>
+              </div>
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <data value="19">19</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#"><img src="./assets/images/blog-5.jpg" alt="Behind the Scenes: A Day in Detailing" loading="lazy" class="w-100"></a>
+            <a href="#" class="btn card-badge">Behind the Scenes</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title"><a href="#">Behind the Scenes: A Day in Detailing</a></h3>
+            <div class="card-meta">
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="2025-02-28">February 28, 2025</time>
+              </div>
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <data value="22">22</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/" alt="Put logo">
+          </a>
+
+          <p class="footer-text">
+            Search for cheap cleaning cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">Anus Butt</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
